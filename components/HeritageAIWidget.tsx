@@ -463,6 +463,25 @@ export default function HeritageAIWidget() {
           <motion.button
             className="hv-btn"
             onClick={() => setIsOpen((v) => !v)}
+            animate={
+              isOpen
+                ? { y: 0 }
+                : {
+                    y: [0, -5, 0, 3, 0],
+                  }
+            }
+            transition={
+              isOpen
+                ? { duration: 0.2 }
+                : {
+                    y: {
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                    },
+                  }
+            }
+            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.93 }}
             aria-label="Open Heritage AI Assistant"
           >

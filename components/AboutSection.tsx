@@ -26,14 +26,17 @@ export default function AboutSection() {
           {/* Right: Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-foreground sm:text-5xl">
+              <h4 className="text-4xl font-bold text-foreground sm:text-5xl">
                 About <span className="text-secondary">HeritageVerse</span>
-              </h2>
+              </h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                HeritageVerse AR is on a mission to preserve India&apos;s rich cultural heritage for future generations through technology, community engagement, and digital storytelling.
+                <b>Preserving India's Heritage Through AI & AR.</b>
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We believe that every monument has a story to tell. By combining AR, AI, and crowdsourced knowledge, we create immersive experiences that connect people to their heritage while supporting real preservation efforts.
+                Many cultural monuments and traditional stories are disappearing due to neglect, environmental damage, and limited digital documentation.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                HeritageVerse combines artificial intelligence, augmented reality, and community participation to preserve heritage digitally, make history more engaging, and empower citizens to contribute to cultural conservation.
               </p>
             </div>
 
