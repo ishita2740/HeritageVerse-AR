@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import HeritageAIWidget from '@/components/HeritageAIWidget';
 
 export default function Page() {
   return (
@@ -18,6 +19,8 @@ export default function Page() {
       <AboutSection />
       <ContactSection />
       <Footer />
+      <HeritageAIWidget />
     </main>
   );
 }
+
