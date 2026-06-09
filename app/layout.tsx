@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'HeritageVerse AR - Preserving the Past. Inspiring the Future.',
-  description: 'Explore monuments in 3D, uncover hidden cultural stories through AI, contribute community memories, and help protect heritage sites for future generations.',
+  description: 'Explore heritage monuments in immersive AR, interact with AI-powered historical guides, contribute community memories, and help protect heritage sites for future generations.',
   generator: 'v0.app',
   icons: {
     icon: [

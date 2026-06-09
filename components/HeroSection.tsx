@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, ArrowDown } from 'lucide-react';
+import { ArrowDown, MessageSquare } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -31,7 +31,7 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="text-balance text-lg text-gray-200 sm:text-xl leading-relaxed max-w-2xl mx-auto">
-              Explore monuments in 3D, uncover hidden cultural stories through AI, contribute community memories, and help protect heritage sites for future generations.
+              Discover monuments in immersive 3D, hear AI-powered cultural stories, and help preserve heritage for future generations.
             </p>
           </div>
 
@@ -42,8 +42,8 @@ export default function HeroSection() {
               <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
             </button>
             <button className="inline-flex items-center gap-2 rounded-lg border-2 border-white bg-white/10 px-8 py-3 font-semibold text-white hover:bg-white/20 transition-all backdrop-blur-sm">
-              <Play className="h-5 w-5 fill-current" />
-              <span>Watch Demo</span>
+              <span>💬</span>
+              <span>AI Guide</span>
             </button>
           </div>
         </div>

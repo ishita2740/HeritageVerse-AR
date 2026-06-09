@@ -55,10 +55,10 @@ export default function CitySlider() {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-foreground sm:text-5xl">
-            Explore Heritage <span className="text-secondary">Cities</span>
+            Explore India's <span className="text-secondary">Heritage</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover India&apos;s most iconic monuments and immerse yourself in their rich cultural heritage through interactive AR experiences.
+            Discover cultural treasures across every state.
           </p>
         </div>
 
@@ -70,9 +70,8 @@ export default function CitySlider() {
               {cities.map((city, index) => (
                 <div
                   key={city.id}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    index === current ? 'opacity-100' : 'opacity-0'
-                  }`}
+                  className={`absolute inset-0 transition-opacity duration-500 ${index === current ? 'opacity-100' : 'opacity-0'
+                    }`}
                 >
                   <img
                     src={city.image}
@@ -81,7 +80,7 @@ export default function CitySlider() {
                   />
                   {/* Overlay with gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  
+
                   {/* City Info */}
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <p className="text-sm font-semibold text-secondary mb-2">
@@ -116,11 +115,10 @@ export default function CitySlider() {
               <button
                 key={city.id}
                 onClick={() => setCurrent(index)}
-                className={`relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden transition-all transform hover:scale-110 ${
-                  index === current
+                className={`relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden transition-all transform hover:scale-110 ${index === current
                     ? 'ring-2 ring-secondary shadow-lg scale-110'
                     : 'opacity-60 hover:opacity-100'
-                }`}
+                  }`}
               >
                 <img
                   src={city.image}
@@ -140,11 +138,10 @@ export default function CitySlider() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === current
+                className={`h-2 rounded-full transition-all ${index === current
                     ? 'bg-secondary w-8'
                     : 'bg-muted-foreground/40 w-2 hover:bg-muted-foreground/60'
-                }`}
+                  }`}
                 aria-label={`Go to city ${index + 1}`}
               />
             ))}
