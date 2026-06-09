@@ -91,13 +91,13 @@ export default function FeaturesSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
               <div
                 key={feature.id}
-                className="group rounded-xl border border-border bg-card p-8 shadow-sm hover:shadow-lg transition-all hover:border-secondary hover:-translate-y-1 hover:bg-gradient-to-br hover:from-card hover:to-muted/50"
+                className="group flex flex-col items-center text-center rounded-xl border border-border bg-card p-5 shadow-sm hover:shadow-lg transition-all hover:border-secondary hover:-translate-y-1 hover:bg-gradient-to-br hover:from-card hover:to-muted/50"
               >
                 {/* Icon */}
                 <div className="mb-4 inline-flex rounded-lg bg-gradient-to-br from-secondary/20 to-accent/20 p-3 group-hover:from-secondary/30 group-hover:to-accent/30 transition-colors">
@@ -105,10 +105,10 @@ export default function FeaturesSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-secondary transition-colors">
+                <h3 className="mb-2 text-lg font-semibold text-foreground group-hover:text-secondary transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>
