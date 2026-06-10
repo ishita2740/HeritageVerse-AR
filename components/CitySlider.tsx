@@ -85,6 +85,18 @@ export default function CitySlider() {
     setCurrentIndex(0);
   }, [searchQuery, selectedState]);
 
+  // Auto-play / Auto-rotate feature
+  useEffect(() => {
+    // Disable auto-play if filtering down to 1 item or if user is hovering
+    if (filteredCities.length <= 1 || hoveredIndex !== null) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % filteredCities.length);
+    }, 3500); // Rotate every 3.5 seconds
+
+    return () => clearInterval(interval);
+  }, [filteredCities.length, hoveredIndex]);
+
   // Auto-dismiss the coming soon modal after 2.5s
   useEffect(() => {
     if (selectedCity) {
