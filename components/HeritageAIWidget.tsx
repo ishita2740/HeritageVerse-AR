@@ -527,7 +527,7 @@ export default function HeritageAIWidget() {
               <div className="hv-header">
                 <div className="hv-header-icon">🏛️</div>
                 <div className="hv-header-text">
-                  <div className="hv-header-title">Heritage AI Guide</div>
+                  <div className="hv-header-title">Cultural Companion AI</div>
                   <div className="hv-header-sub">
                     <span className="hv-online-dot" />
                     <span>Online · Powered by HeritageVerse</span>

@@ -47,7 +47,7 @@ const features = [
     items: ["Collect Stamps", "Take Quizzes", "Earn Badges", "Level Up"]
   },
   {
-    title: "HERITAGE AI GUIDE",
+    title: "CULTURAL COMPANION AI",
     icon: Bot,
     color: "text-indigo-700",
     bgColor: "bg-indigo-100",
