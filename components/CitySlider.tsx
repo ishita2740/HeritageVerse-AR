@@ -141,16 +141,11 @@ export default function CitySlider() {
     if (Math.abs(diff) > 2) opacity = 0;
 
     // Hover interactions
-    if (isHovered && !isCenter) {
-      y = -15; // Subtle lift indicating interactability
-      scale = 0.95;
-      brightness = 0.85;
-    }
-
-    if (isHovered && isCenter) {
-      y = -20; // Smooth elegant lift (not abrupt 40px)
-      scale = 1.02; // Cinematic gentle growth
-      brightness = 1;
+    if (isHovered) {
+      y = -30; // Strong lift to "pop it up"
+      scale = 1.05; // Noticeable scale up so it "comes out"
+      brightness = 1; // Fully highlighted
+      zIndex = 60; // Bring to absolute front over all other cards
     }
 
     return {
