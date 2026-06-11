@@ -94,7 +94,7 @@ export function AdoptAMonumentSection() {
     .slice(0, 4);
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-12 bg-[#fffaee]">
+    <section id="about" className="py-16 px-4 md:px-8 lg:px-12 bg-[#fffaee]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

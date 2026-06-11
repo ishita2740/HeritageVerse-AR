@@ -27,19 +27,8 @@ export function KolkataHeroSection() {
 
   return (
     <>
-      {/* Top Banner */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#6B0000] text-[#C8A020] py-2 text-center text-sm italic font-playfair">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          স্বাগতম · Exploring Kolkata — City of Joy · Living Heritage · Eternal Culture
-        </motion.div>
-      </div>
-
       {/* Hero Section */}
-      <section className="relative w-full h-screen bg-black overflow-hidden pt-12">
+      <section className="relative w-full h-screen bg-black overflow-hidden">
         {/* Video Background with Overlay */}
         <div className="absolute inset-0">
           <video

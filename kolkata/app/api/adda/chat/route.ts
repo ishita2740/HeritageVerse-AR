@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     }
 
     const personaPrompt = personas[persona.toLowerCase()] || personas.tagore;
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
     const conversationHistory = history || [];
     conversationHistory.push({ role: 'user', parts: [{ text: message }] });

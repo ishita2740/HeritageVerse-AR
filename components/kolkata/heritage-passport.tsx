@@ -14,7 +14,7 @@ export function HeritagePassportSection() {
   }, []);
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-12 bg-background">
+    <section id="play" className="py-16 px-4 md:px-8 lg:px-12 bg-background">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

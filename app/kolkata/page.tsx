@@ -1,3 +1,4 @@
+import { KolkataHeader } from '@/components/kolkata/kolkata-header';
 import { KolkataHeroSection } from '@/components/kolkata/hero-section';
 import { MonumentGrid } from '@/components/kolkata/monument-grid';
 import { ThreeDViewerSection } from '@/components/kolkata/three-d-viewer';
@@ -40,6 +41,7 @@ export default function KolkataPage() {
   return (
     <main className="bg-background text-foreground overflow-x-hidden">
       {/* All sections in sequence */}
+      <KolkataHeader />
       <KolkataHeroSection />
       <MonumentGrid />
       <ThreeDViewerSection />

@@ -170,7 +170,7 @@ export function AIStorytellerSection() {
   }
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-12 bg-[#f0eeff]">
+    <section id="stories" className="py-16 px-4 md:px-8 lg:px-12 bg-[#f0eeff]">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
