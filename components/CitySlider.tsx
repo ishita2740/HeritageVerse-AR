@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, ArrowRight, Landmark, X, ChevronLeft, ChevronRight, Search, Filter, ChevronDown } from 'lucide-react';
 
@@ -62,6 +63,7 @@ const cities = [
 ];
 
 export default function CitySlider() {
+  const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(2); // Start near the middle
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedCity, setSelectedCity] = useState<typeof cities[0] | null>(null);
@@ -106,7 +108,11 @@ export default function CitySlider() {
   }, [selectedCity]);
 
   const handleCardClick = (index: number, city: typeof cities[0]) => {
-    setSelectedCity(city);
+    if (city.city === 'Kolkata') {
+      router.push('/kolkata');
+    } else {
+      setSelectedCity(city);
+    }
   };
 
   const handleHoverStart = (index: number) => {
@@ -172,7 +178,7 @@ export default function CitySlider() {
   };
 
   return (
-    <section id="explore" className="w-full pt-[100px] pb-[100px] bg-[#F5E3CC] overflow-hidden font-sans">
+    <section id="explore" className="w-full pt-[100px] pb-[100px] bg-[#F5E3CC] overflow-hidden font-sans scroll-mt-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

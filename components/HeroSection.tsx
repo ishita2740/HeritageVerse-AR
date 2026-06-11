@@ -37,14 +37,14 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
-            <button className="group relative inline-flex items-center gap-2 rounded-lg bg-secondary px-8 py-3 font-semibold text-primary hover:bg-secondary/90 transition-all hover:shadow-lg transform hover:scale-105">
+            <a href="#explore" className="group relative inline-flex items-center gap-2 rounded-lg bg-secondary px-8 py-3 font-semibold text-primary hover:bg-secondary/90 transition-all hover:shadow-lg transform hover:scale-105">
               <span>Explore Now</span>
               <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
-            </button>
-            <button className="inline-flex items-center gap-2 rounded-lg border-2 border-white bg-white/10 px-8 py-3 font-semibold text-white hover:bg-white/20 transition-all backdrop-blur-sm">
+            </a>
+            <a href="#features" className="inline-flex items-center gap-2 rounded-lg border-2 border-white bg-white/10 px-8 py-3 font-semibold text-white hover:bg-white/20 transition-all backdrop-blur-sm">
               <span>💬</span>
               <span>AI Guide</span>
-            </button>
+            </a>
           </div>
         </div>
 

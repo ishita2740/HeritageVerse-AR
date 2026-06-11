@@ -111,7 +111,7 @@ export default function FeaturesSection() {
   const cy = 550;
 
   return (
-    <section id="features" className="w-full py-20 bg-[#F8F5EF] relative overflow-hidden font-sans">
+    <section id="features" className="w-full py-20 bg-[#F8F5EF] relative overflow-hidden font-sans scroll-mt-6">
       
       {/* Background Decor */}
       <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">

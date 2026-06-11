@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-playfair: var(--font-playfair), 'Playfair Display', serif;
+  --font-noto-bengali: var(--font-noto-bengali), 'Noto Sans Bengali', sans-serif;
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-geist-sans), 'Geist Fallback';
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Heritage Kolkata Color System */
+  --background: #f5f1e8;
+  --foreground: #2d2522;
+  --card: #fefdfb;
+  --card-foreground: #2d2522;
+  --popover: #fefdfb;
+  --popover-foreground: #2d2522;
+  --primary: #2d5016;
+  --primary-foreground: #f5f1e8;
+  --secondary: #d4a574;
+  --secondary-foreground: #2d2522;
+  --muted: #e8d4c4;
+  --muted-foreground: #6b6055;
+  --accent: #c89968;
+  --accent-foreground: #2d2522;
+  --destructive: #c83050;
+  --border: #e0d9ce;
+  --input: #fefdfb;
+  --ring: #2d5016;
+  --chart-1: #2d5016;
+  --chart-2: #d4a574;
+  --chart-3: #c89968;
+  --chart-4: #e8d4c4;
+  --chart-5: #f5f1e8;
+  --radius: 0.5rem;
+  --sidebar: #f5f1e8;
+  --sidebar-foreground: #2d2522;
+  --sidebar-primary: #2d5016;
+  --sidebar-primary-foreground: #f5f1e8;
+  --sidebar-accent: #d4a574;
+  --sidebar-accent-foreground: #2d2522;
+  --sidebar-border: #e0d9ce;
+  --sidebar-ring: #2d5016;
+}
+
+.dark {
+  --background: #1a1814;
+  --foreground: #f5f1e8;
+  --card: #2d2522;
+  --card-foreground: #f5f1e8;
+  --popover: #2d2522;
+  --popover-foreground: #f5f1e8;
+  --primary: #4a7820;
+  --primary-foreground: #f5f1e8;
+  --secondary: #e8b88d;
+  --secondary-foreground: #1a1814;
+  --muted: #4a4440;
+  --muted-foreground: #d4c9ba;
+  --accent: #d4a777;
+  --accent-foreground: #1a1814;
+  --destructive: #e05070;
+  --border: #3d3530;
+  --input: #2d2522;
+  --ring: #4a7820;
+  --chart-1: #4a7820;
+  --chart-2: #e8b88d;
+  --chart-3: #d4a777;
+  --chart-4: #4a4440;
+  --chart-5: #2d2522;
+  --sidebar: #2d2522;
+  --sidebar-foreground: #f5f1e8;
+  --sidebar-primary: #4a7820;
+  --sidebar-primary-foreground: #f5f1e8;
+  --sidebar-accent: #e8b88d;
+  --sidebar-accent-foreground: #1a1814;
+  --sidebar-border: #3d3530;
+  --sidebar-ring: #4a7820;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
